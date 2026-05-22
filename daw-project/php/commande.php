@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
     try {
-        $conn = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8" , $dbuser , $dbpass);
+        $conn = new PDO('sqlite:' . __DIR__ . '/Base_Client.sqlite');
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $query = "INSERT INTO Commande_produit(Id_client , Vendeur_prod , Prix_prod , Ref_prod , Colr_prod , Qant_prod ) VALUES(?,?,?,?,?,?)";
         $stmt = $conn->prepare($query);

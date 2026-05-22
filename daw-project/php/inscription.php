@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"]=="POST") {
     $dbuser = "root";
     $dbpass = "@Younes2006";
     try {
-        $conn=new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $dbuser , $dbpass);
+        $conn=new PDO('sqlite:' . __DIR__ . '/Base_Client.sqlite');
         $conn->setAttribute(PDO::ATTR_ERRMODE , PDO::ERRMODE_EXCEPTION);
         $query = "INSERT INTO Client ( No_Clt , Pno_Clt , Age_Clt , Wi_Clt , Tel_Clt , Mail_Clt , Adr_Clt , Mot_Clt , Sexe_Clt)
         VALUES (?,?,?,?,?,?,?,?,?)";
