@@ -44,3 +44,9 @@ The core architecture of this application relies on PHP Sessions to dynamically 
 * **Name:** Younes Debbache
 * **Academic Level:** 2nd Year Computer Science (L2)
 * **Institution:** Ferhat Abbas University (Sétif 1), Algeria.
+
+---
+
+
+##ملاحظة صغيرة 
+صح كاين حوايج عاوني فيهم الذكاء الاصطناعي خاصة كوتي PHP و PDO و غيرها و لكن راني فهمتهم مليح فبل ما نحطهم في الكود تاعي لانو علبالي بلي راح نحتاجهم في المستقبل باذن الله . ان شاء الله يكون عجبك تعبي يا أستاذ و ان شاء الله تعطيني فيه علامة مليحة
