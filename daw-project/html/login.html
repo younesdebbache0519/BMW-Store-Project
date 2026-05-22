@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <script src="../js/validation.js" defer></script>
+    <title>Login-BMW STORE</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="index.php">BMW STORE</a></h1>
+      <nav>
+        <a href="index.php">Home</a>
+      </nav>
+    </header>
+    <main>
+      <div id="form-container">
+        <form
+          action="../php/login.php"
+          method="post"
+          onsubmit="Validation_login(event)"
+        >
+          <h1>Welcome Back</h1>
+          <div id="email">
+            <label for="input-email">E-mail:</label>
+            <input name="email" id="input-email" type="email" />
+          </div>
+          <div id="password">
+            <label for="input-password">Password:</label>
+            <input name="password" id="input-password" type="password" />
+          </div>
+          <div id="buttons">
+            <button id="submit" type="submit">Submit</button>
+            <button id="clear" type="reset">Clear</button>
+          </div>
+          <p>New user? <a href="../html/inscription.html">Sign Up</a></p>
+        </form>
+      </div>
+    </main>
+    <footer>
+      Developed by Younes Debbache - Group G04 - Farhat Abbas University - Setif
+    </footer>
+  </body>
+</html>

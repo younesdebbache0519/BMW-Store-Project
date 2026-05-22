@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order-BMW STORE</title>
+    <link rel="stylesheet" href="../../css/css-products/commande_produit.css" />
+    <script src="../../js/validation.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1><a href="../../html/index.php">BMW STORE</a></h1>
+      <nav>
+        <a href="../../html/index.php">Home</a>
+      </nav>
+    </header>
+    <main>
+      <div id="form-container">
+        <h1 style="text-align: center; margin-bottom: 20px">Order Product</h1>
+        <div style="text-align: center; margin-bottom: 20px">
+          <img src="../../images/image3.png" alt="Selected Car" />
+        </div>
+        <form action="../../php/commande.php" method="POST" onsubmit="validation_order(event)">
+          <div class="form-group">
+            <label>Model:</label>
+            <input
+              type="text"
+              name="Ref_prod_disabled"
+              value="BMW X5M"
+              disabled
+            />
+            <input type="hidden" name="Ref_prod" value="BMW X5M" />
+          </div>
+          <div class="form-group">
+            <label>Seller:</label>
+            <input
+              type="text"
+              name="Vendeur_prod_disabled"
+              value="BMW STORE"
+              disabled
+            />
+            <input type="hidden" name="Vendeur_prod" value="BMW Official" />
+          </div>
+          <div class="form-group">
+            <label>Price:</label>
+            <input
+              type="text"
+              name="Prix_prod_disabled"
+              value="65,000$"
+              disabled
+            />
+            <input type="hidden" name="Prix_prod" value="65000" />
+          </div>
+
+          <div class="form-group">
+            <label>Color:</label>
+            <div id="radio-group">
+              <label
+                ><input type="radio" name="Colr_prod" value="Black" checked />
+                Black</label
+              >
+              <label
+                ><input type="radio" name="Colr_prod" value="White" />
+                White</label
+              >
+              <label
+                ><input type="radio" name="Colr_prod" value="M-Blue" />
+                M-Blue</label
+              >
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Quantity:</label>
+            <select id="Qant_prod" name="Qant_prod">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+          <button type="submit" id="submit">Confirm Order</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      Developed by Younes Debbache - Group G04 - Farhat Abbas University - Setif
+    </footer>
+  </body>
+</html>

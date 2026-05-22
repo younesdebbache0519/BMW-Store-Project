@@ -1,0 +1,121 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+:root{
+    --primary-color : #121212 ; 
+    --secondry-color : #1e1e1e ; 
+    --lines-color : #0066b2 ; 
+    --first-text-color : #f4f4f4 ; 
+    --secont-text-color : #aaa ; 
+
+}
+body {
+    background-color: var(--primary-color);
+    color: var(--first-text-color);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+footer{
+    height: 55px;
+    background-color: #000;
+    color: var(--secont-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:medium;
+}
+main{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+.welcome-msg {
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+a {
+    text-decoration: none; 
+    color: inherit; 
+}
+nav a:hover{
+    color: #0066b2;
+}
+img {
+    max-width: 100%;
+    display: block; 
+    height: auto;
+    width: 250px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    margin-bottom: 20px solid #fff;
+    align-items: center;
+    border-bottom: 3px solid var(--lines-color);
+    padding: 20px 50px;
+}
+header h1{
+    letter-spacing: 2px;
+}
+header nav{
+    display: flex;
+    justify-content: space-around;
+}
+header nav a{
+    padding: 10px;
+    font-weight: bolder;
+    transition: color 0.5s;
+}
+#cars_list{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    
+}
+#cars_list div{
+    background-color: var(--secondry-color);
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 0.5px solid var(--secont-text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 334px;
+    
+}
+#cars_list div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 102, 178, 0.3);
+    border: 1px solid var(--lines-color);
+}
+#cars_list div a{
+    color: var(--first-text-color);
+    background-color: var(--lines-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition-duration: 0.3s;
+}
+#cars_list div a:hover{
+    background-color: #004d88;
+}
+#cars_list div p{
+    color: var(--secont-text-color);
+    letter-spacing: 2px;
+    font-size: large;
+}
+#welcome-msg{
+    padding: 10px;
+}
