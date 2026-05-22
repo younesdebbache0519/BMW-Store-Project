@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"]=="POST") {
     $host = "sql301.infinityfree.com";
     $dbname = "if0_41995530_db";
     $dbuser = "if0_41995530";
-    $dbpass = "u5UOlhPre0";
+    $dbpass = "u5UOIhPreO";
     try {
         $conn = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8" , $dbuser , $dbpass);
         $conn->setAttribute(PDO::ATTR_ERRMODE , PDO::ERRMODE_EXCEPTION);

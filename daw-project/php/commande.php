@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $host = "sql301.infinityfree.com";
     $dbname = "if0_41995530_db";
     $dbuser = "if0_41995530";
-    $dbpass = "u5UOlhPre0";
+    $dbpass = "u5UOIhPreO";
 
 
     try {
