@@ -13,10 +13,10 @@ if ($_SERVER["REQUEST_METHOD"]=="POST") {
     $address = $_POST["address"];
     $password = $_POST["password"];
     $gender = $_POST["gender"];
-    $host = "127.0.0.1";
-    $dbname = "Base_Client";
-    $dbuser = "root";
-    $dbpass = "@Younes2006";
+    $host = "sql301.infinityfree.com";
+    $dbname = "if0_41995530_db";
+    $dbuser = "if0_41995530";
+    $dbpass = "u5UOlhPre0";
     try {
         $conn=new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $dbuser , $dbpass);
         $conn->setAttribute(PDO::ATTR_ERRMODE , PDO::ERRMODE_EXCEPTION);

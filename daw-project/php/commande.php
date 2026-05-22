@@ -13,10 +13,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $Prix_prod = $_POST["Prix_prod"];
     $Colr_prod = $_POST["Colr_prod"]; 
     $Qant_prod = $_POST["Qant_prod"];
-    $host = "127.0.0.1";
-    $dbname = "Base_Client";
-    $dbuser = "root";
-    $dbpass = "@Younes2006";
+    $host = "sql301.infinityfree.com";
+    $dbname = "if0_41995530_db";
+    $dbuser = "if0_41995530";
+    $dbpass = "u5UOlhPre0";
 
 
     try {
